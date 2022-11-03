@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #12c2e9;
+  width: 100%;
+  z-index: 3;
+  position: absolute;
+}
+
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #c471ed;
+  color: white;
+}
+
+.background {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(to right top, #12c2e9, #c471ed, #f64f59);
+	z-index: 2;
+}
+
+main {
+	display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+.glass {
+	height: 75%;
+	width: 55%;
+	z-index: 4;
+	background: rgba(255, 255, 255, 0.3);
+	border-top: 1px solid rgba(255, 255, 255, 0.6);
+	border-left: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 12px;
+	box-shadow: 0 26px 42px rgba(0, 0, 0, 0.3);
+	font-family: 'Montserrat', sans-serif;
+	backdrop-filter: blur(16px);
+	display: grid;
+	place-items: center;
+	color: white;
+	font-size: 70px;
+	
+	
+}
+
+.circle {
+	z-index: 3;
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	
+}
+
+.circle1 {
+	background: #12c2e9;
+	right: 216px;
+	top: 180px;
+	animation: circle1 8s ease-in-out alternate infinite;
+}
+
+@keyframes circle1 {
+  100% {
+    top: 60px;
+  }
+}
+
+.circle2 {
+	background: #f64f59;
+	bottom: 178px;
+	left: 220px;
+	animation: circle2 7s ease-in-out alternate infinite;
+}
+
+@keyframes circle2 {
+  100% {
+    bottom: 40px;
+  }
+}
+
+h1 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 50px;
+	color: white;
+	letter-spacing: 2px;
+	margin-top: 0;
+}
+
+/*
+
+input, button {
+  font-size: 16px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 20px auto;
+  padding: 12px 20px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 13px 21px rgba(0, 0, 0, 0.05);
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: white;
+}
+
+button {
+  cursor: pointer;
+  background: #f64f59;
+  color: white;
+  transition: 0.5s;
+}
+
+button:hover {
+  background: #12c2e9;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+				<form> 
+				<input type="text" placeholder="yourname@gmail.com" />
+				<input type="password" placeholder="Must have atleast 6 characters" />
+				<button type="submit">Login</button>
+				</form>
+				
+*/
