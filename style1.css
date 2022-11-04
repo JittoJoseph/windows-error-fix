@@ -136,10 +136,7 @@ h1 {
 	font-family: Helvetica;
 	font-size: 100px;
 }
-.spacer:hover {
-	font-size: 70px;
-	color: black;
-}
+
 .parallax2 {
 	background-image: url("https://img1.goodfon.com/wallpaper/nbig/7/e4/zharenaya-kurica-zharenaya-kurica-6547.jpg");
 	background-attachment: fixed;
