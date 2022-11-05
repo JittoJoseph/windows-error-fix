@@ -20,7 +20,6 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	font-family: Poppins;
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
 }
 
 .first {
@@ -32,15 +31,15 @@ body {
 }
 
 .navbar a {
-	color: #f2f2f2;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 17px;
+	color: white;
 }
 
 .navbar a:hover {
-	color: #FF8900;
+	color: #F80D0C;
 	animation: shake 0.9s;
 	animation-iteration-count: 1;
 }
@@ -57,7 +56,9 @@ body {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background-image: url('https://wallpapersmug.com/download/3840x2160/f56733/Halloween-cupcakes-dessert.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+                       rgba(0, 0, 0, 0.3)), url('https://w0.peakpx.com/wallpaper/885/572/HD-wallpaper-cupcakes-sweets-pastries-cream-cakes.jpg');
+	
 	background-size: cover;
 	background-position: center;
 	/*background: linear-gradient(to right top, #12c2e9, #c471ed, #f64f59);*/
@@ -87,7 +88,7 @@ main {
 	backdrop-filter: blur(16px);
 	display: grid;
 	place-items: center;
-	color: white;
+	color: #452727;
 	font-size: 70px;
 	
 	
@@ -96,6 +97,7 @@ main {
 .glass p {
 	font-size: 30px;
 	font-family: 'Montserrat', sans-serif;
+	color: white;
 }
 
 .circle {
@@ -111,9 +113,12 @@ main {
 h1 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 60px;
-	color: white;
 	letter-spacing: 2px;
 	margin-top: 0;
+	background-image: linear-gradient(to left, #FFFFFF, white);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
 }
 
 /*
